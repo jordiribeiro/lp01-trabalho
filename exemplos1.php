@@ -95,7 +95,7 @@ Maximo a ser abatido:
 R$ 15180
 ------------------------------------------
 Total de valores possiveis de abater:
-R$ 5000(servicos medicos)
+R$ 500(servicos medicos)
 R$ 4000(servicos educacionais)
 R$ 4500(total)
 ------------------------------------------
