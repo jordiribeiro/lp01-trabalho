@@ -13,34 +13,35 @@ if ($sexo == "H" || $sexo == "h") {
 	$valorsexo = 10;
 } else {
 	$valorsexo = 8;
-}
+} // Valor básico por sexo
 if ($cerveja >= 1) {
 	$valorcerv = 2.5 * $cerveja;
-}
+} // valor total de cerveja
 if ($refri >= 1) {
 	$valorrefri = 2 * $refri;
-}
+} // valor total de refri
 if ($espetinho >= 1) {
 	$valoresp = 4 * $espetinho;
-}
-$cantor = $valorcerv + $valoresp + $valorrefri;
-$c = 3;
+} // valor total de espetinho
+$cantor = $valorcerv + $valoresp + $valorrefri; // formula soma para calcular se precisará pagar cantor
+$c = 3; // variavel atribuida ao valor de cantor
 if ($cantor > 15) {
 	$subtotal = $cantor + $valorsexo;
 } else {
 	$subtotal = $cantor + $valorsexo + $c;
 }
-print "O valor básico é : " . $valorsexo;
-print "\nO valor de cervejas consumidas é : " . $valorcerv;
-print "\nO valor de refrigerantes consumidos é : " . $valorrefri;
-print "\nO valor de espetinhos consumidos é : " . $valoresp;
+print "\nO valor básico é : R$ " . $valorsexo;
+print "\nO valor de cervejas consumidas é : R$ " . $valorcerv;
+print "\nO valor de refrigerantes consumidos é : R$ " . $valorrefri;
+print "\nO valor de espetinhos consumidos é : R$ " . $valoresp;
 if ($cantor < 15) {
-	print "\nO valor de cantor foi de : " . $c;
+	print "\nO valor de cantor foi de : R$ " . $c;
 }
-print "\nO subtotal (sem 10%) é  : " . $subtotal;
+print "\nO subtotal (sem 10%) é  : R$ " . $subtotal;
+print "\n----------------------------------------------------------------------";
 
 $t = $subtotal * (10 / 100);
 $total = $subtotal + $t;
-print "\nO total consumido foi de : " . $total;
+print "\nO total consumido foi de : R$ " . $total;
 ?>
 
