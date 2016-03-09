@@ -24,19 +24,19 @@ $outros1 = (10 / 100) * $outros; // 10% referente a outros lucros
 
 $total1 = $outros1 + $sal1 + $b1; // total de todos os impostos sobre os valores
 
-print "\nSalário : $sal1";
-print "\nRendimentos Bancários : $b1";
-print "\nOutros Rendimentos : $outros1";
+print "\nSalário : R$$sal1";
+print "\nRendimentos Bancários : R$$b1";
+print "\nOutros Rendimentos : R$$outros1";
 print "\n----------------------------------------------";
-print "\nO valor total de rendimentos  é :$total1";
+print "\nO valor total de rendimentos  é :R$ $total1";
 print "\n----------------------------------------------";
 print "\nMaximo a ser abatido : " . $maximo = (30 / 100) * $total1;
 
 print "\nTotal de valores possiveis de abater : ";
-print "\n Valores  medicos :$servmed"; // variavel referente a serviços medicos pagos
-print "\nValores educacionais: $seredu"; // variavel referente a serviços educacionais pagos
+print "\n Valores  medicos :R$ $servmed"; // variavel referente a serviços medicos pagos
+print "\nValores educacionais:R$ $seredu"; // variavel referente a serviços educacionais pagos
 print "\n----------------------------------------------";
-print "\n Total é igual a : " . $total2 = $seredu + $servmed;
+print "\n Total é igual a : R$ " . $total2 = $seredu + $servmed;
 
 print "\n----------------------------------------------";
 
@@ -52,10 +52,10 @@ $totalabatido = $total1 - $totalabatido1;
 
 $abatimento = $totalabatido1;
 
-print "\nIMPOSTO TOTAL: ";
-print "\nImposto Bruto : " . $total1;
-print "\nAbatimentos: " . $abatimento;
-print "\n TOTAL COM ABATIMENTO: " . $totalabatido;
+print "\nIMPOSTO TOTAL:  ";
+print "\nImposto Bruto :R$ " . $total1;
+print "\nAbatimentos: R$" . $abatimento;
+print "\n TOTAL COM ABATIMENTO: R$ " . $totalabatido;
 
 ?>
 

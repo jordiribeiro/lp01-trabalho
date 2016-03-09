@@ -2,6 +2,10 @@
 print "Bem vindo ao sistema !";
 print "\nDigite o sexo do cliente: ";
 $sexo = trim ( fgets ( STDIN ) );
+if ($sexo != "h" && $sexo != "H" && $sexo != "f" && $sexo != "F") {
+	print "TENTE NOVAMENTE !";
+	exit ;
+}
 print "\nDigite o numero de cervejas consumidas: ";
 $cerveja = trim ( fgets ( STDIN ) );
 print "\nDigite o numero de refrigerantes consumidos: ";
